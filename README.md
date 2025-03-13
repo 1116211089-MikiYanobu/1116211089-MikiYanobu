@@ -1,4 +1,4 @@
-## Hi there 👋
+## 埋め込み空間分析のためのユークリッド距離を用いた拡散モデルのガイダンス
 
 <!--
 **1116211089-MikiYanobu/1116211089-MikiYanobu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -14,3 +14,9 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+### 概要
+### 実行環境
+### 各フォルダの説明
+### 実行方法
+#### 参考文献
