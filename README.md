@@ -23,6 +23,32 @@ Here are some ideas to get you started:
 ### 実行環境
 ### 各フォルダの説明
 ### 実行方法
+#### インストール
+```
+cd stable-diffusion-guided
+conda env create -f environment.yaml
+conda activate ldm
+conda install pytorch torchvision cudatoolkit=11.3 -c pytorch
+pip install GPUtil
+pip install blobfile
+pip install facenet-pytorch
+```
+[Bansalらのuniveisal guidance](https://github.com/arpitbansal297/Universal-Guided-Diffusion)に記載されている方法に従っているが， facenet-pytorchはいらないかもしれない．  
+  
+condaの設定がまだの場合は，   
+・アナコンダのダウンロード  
+公式ページからアナコンダをダウンロードする．
+(私はAnaconda3-2024.02-1-Linux-x86_64.shを使用した)  
+上記シェルスクリプトを実行する．  
+・condaの設定  
+（上記シェルスクリプトを実行後、`conda init`が行われない場合に以下を試す）  
+（白浜先生が設定してくださった時のコマンドを遡って使っているので， 矢延は詳しく理解していないです）  
+`conda init --reverse $SHELL`が上手くいかず， `/root/anaconda3/bin/conda`を探してもない場合に，  
+```
+eval "$(/root/anaconda3/bin/conda shell.bash hook)"
+conda init
+```
+
 ### 参考文献
 ```
 @misc{bansal2023universalguidancediffusionmodels,
